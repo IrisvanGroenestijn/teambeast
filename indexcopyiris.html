@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/2gether-transparent.png" width="40" alt="Breda University of Applied Sciences">
+          <img src="images/logo.png" width="10" alt="Breda University of Applied Sciences">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -89,23 +89,117 @@
   </div>
 </header>
 
-<!-- Page section example for content below the video header -->
-<section class="my-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
-        <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
-        <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
-        <p class="mb-0">
-          Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 	<body>
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .column {
+            flex: 1;
+            max-width: 25%;
+            padding: 10px;
+        }
+        .card {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        @media screen and (max-width: 800px) {
+            .column {
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+	<br> <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="images/iris.jpg" alt="Jane">
+                <div class="container">
+                    <br> <h3>Iris van Groenestijn</h3>
+                    <p class="title">CEO &amp; Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>&nbsp;</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/max.jpg" alt="Mike">
+                <div class="container">
+                  <br>  <h2>Max Heijnsdijk&nbsp;</h2>
+                    <p class="title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="img3.jpg" alt="John">
+                <div class="container">
+                    <h2>Luna van der Windt&nbsp;</h2>
+                    <p class="title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/merel.jpg" alt="Emily">
+                <div class="container">
+                   <br> <h2>Merel Enitus&nbsp;</h2>
+                    <p class="title">Marketing Lead</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
     
 	</body>
 
