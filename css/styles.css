@@ -2,6 +2,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
 
+h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #F1600D;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0F3894;
+    text-align: center;
+}
+
+/* Value items - h5 and p inline */
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between h5 and p */
+    margin-bottom: 10px; /* Space between each value */
+}
+
+/* Styling for h5 */
+h5 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #306A4A;
+    margin: 0;
+    font-size: 1.1em;
+    white-space: nowrap; /* Prevents h5 from wrapping */
+}
+
+/* Styling for paragraphs */
+p {
+    margin: 0;
+    flex: 1; /* Allows text to fill remaining space */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #0F3894;
+    color: #FEF6ED;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+p {
+  margin-top: 5px; /* Remove extra space above paragraphs */
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+
+
 /* Changing the main font and background colour */
 body {
     font-family: Raleway, sans-serif;
