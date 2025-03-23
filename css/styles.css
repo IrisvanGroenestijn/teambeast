@@ -7,7 +7,7 @@ h2 {
     font-weight: 400;
     font-style: italic;
     color: #F1600D;
-    text-align: center;
+    text-align: left;
 }
 
 h4 {
@@ -21,10 +21,27 @@ h4 {
 /* Value items - h5 and p inline */
 .value-item {
     display: flex;
-    align-items: center;
-    gap: 10px; /* Space between h5 and p */
-    margin-bottom: 10px; /* Space between each value */
+    align-items: flex-start; /* Align text tops */
+    gap: 10px;
+    margin-bottom: 16px;
 }
+
+.value-item h5 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #306A4A;
+    margin: 0;
+    font-size: 1.1em;
+    width: 180px; /* Fixed width for alignment */
+    flex-shrink: 0;
+}
+
+.value-item p {
+    margin: 0;
+    flex: 1;
+}
+
 
 /* Styling for h5 */
 h5 {
