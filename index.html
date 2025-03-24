@@ -1,32 +1,27 @@
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C47FPQ1C61"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C47FPQ1C61');
-</script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+	  <!-- fonts -->
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	  
     <!-- Own Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <title>PRJ4 Base Group Template &mdash; Landing Page</title>
+    <title>PRJ4 Base Group Template &mdash; Example based on Bing Chat&rsquo;s suggestion</title>
 
     <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C47FPQ1C61"></script>
     <!-- End of Google Analytics code -->
 
   </head>
@@ -36,7 +31,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/2gether-transparent.png" width="40" alt="Breda University of Applied Sciences">
+          <img src="images/logo.png" width="40" alt="Breda University of Applied Sciences">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,11 +39,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="example.html">Example</a>
-            </li>
+            
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 UX Patterns
@@ -73,19 +66,223 @@
     </nav>
     <!-- End of navigation bar -->
 
-    <!-- Start of main placeholder in landing page -->
-    <main class="h-100 d-flex flex-column justify-content-center align-items-center">
-      <img class="mb-4" src="images/2gether-transparent.png" alt="Logo van 2gether">
-      <h1>2Gether</h1>
-      <h5 class="fst-italic mb-5">Coming soon...</h5>
-      <div class="container text-center">
-        <p>This is a page you can use as a placeholder for your future website.</p>
-        <p>Once published (which should be at the end of week 5 of the project), it can be fully integrated within your marketing campaign.</p>
-        <p>You will then replace this landing page by a full website.</p>
-        <p>To build your website, you can start with the <a href="example.html">example</a> or pick and mix elements from the UX pattern pages of this website (check menu above).</p>
+    
+
+    <div class="container-fluid">
+      <div class="row bg-success bg-opacity-25">
+
+    <!-- Start of hero section -->
+        <header class="col-12 col-lg-8 col-xl-6 p-0">
+          <div class="d-flex w-100 position-relative">
+            <video autoplay loop muted class="w-100 m-0">
+                <source src="https://www.buas.nl/sites/default/files/2023-09/corporate_video.mp4" type="video/mp4">
+            </video>
+            <div class="w-100 position-absolute pt-2 pt-md-4 pt-lg-5 text-center">
+              <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                  <h1 class="fw-bold white-shadow">All 2gether Now!</h1>
+                  <h2 class="fw-bold white-shadow">The online platform for togetherness!</h2>
+                  <p class="mt-2">
+                    <a href="#" class="btn btn-lg btn-primary m-1">Join now!</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    <!-- End of hero section -->
+      
+   <!-- Who we are section -->
+<section class="col-12 col-lg-4 offset-xl-1 who-we-are text-center">
+	<br>
+  <h2 class="racing-sans-one-regular mt-2">Who we are</h2>
+  <p class="pacifico-regular">At TeamBeast, we design custom mascots for amateur teams, bringing energy, identity, and unforgettable moments to every game. </p>
+  <p>We believe every team, big or small, deserves a mascot that reflects its spirit. Whether it’s funny, fierce, or unique, we create a mascot that perfectly matches your team’s personality. </p>
+  <p>Together, we make every game more exciting and strengthen the bond between the team and its fans.</p>
+</section>
+
+
       </div>
-    </main>
-    <!-- End of main placeholder -->
+    </div>
+
+    <div class="container pt-3 pb-2">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
+          <br><br>
+			<h2>Our vision</h2>
+          <p>
+			  <br>
+            We Roar, We Score!  A team without spirit is just a group of players. That’s where we come in! TeamBeast brings hype, pride, and power, because every club deserves to stand out, loud and proud! 
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+	  
+	    <!-- Meet the Team -->
+	  <section class="team-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Meet the Team</h2>
+        <div class="row">
+
+            <!-- Team Member 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member text-center">
+                    <img src="images/iris.jpg" alt="John Smith" class="team-img mb-3">
+                    <h5>Iris van Groenestijn&nbsp;</h5>
+                    <p class="text-muted">CEO and Founder</p>
+                    <a href="https://www.instagram.com/irisvangroenestijn?igsh=MWh6bm5mZDlpa3hoYw%3D%3D&utm_source=qr" target="_blank">
+                    <button class="contact-btn">Contact</button>
+                 </a>
+                </div>
+            </div>
+
+			<!-- Team Member 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member text-center">
+                    <img src="images/Luna.png" alt="James Brown" class="team-img mb-3">
+                    <h5>Luna van der Windt&nbsp;</h5>
+                    <p class="text-muted">Lead Developer</p>
+                     <a href="https://www.instagram.com/paraplunaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <button class="contact-btn">Contact</button>
+                 </a>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member text-center">
+                    <img src="images/merel.jpg" alt="Lisa Johnson" class="team-img mb-3">
+                    <h5>Merel Enitus&nbsp;</h5>
+                    <p class="text-muted">Marketing Head</p>
+                    <a href="https://www.instagram.com/merelentius_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <button class="contact-btn">Contact</button>
+                 </a>
+                </div>
+            </div>
+
+            
+            <!-- Team Member 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member text-center">
+                    <img src="images/max.jpg" alt="Sophia White" class="team-img mb-3">
+                    <h5>Max Heijnsdijk&nbsp;</h5>
+                    <p class="text-muted">UI/UX Designer</p>
+                   <a href="https://www.instagram.com/maxheijnsdijkk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <button class="contact-btn">Contact</button>
+                 </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+	  <br><br>
+ <!-- End meet the Team -->
+	  
+	   <!-- Testimonials  -->
+   <section class="testimonial-section py-5">
+    <div class="container"> <br>
+        <h2 class="text-center mb-4 text-white">What Our Clients Say</h2>
+
+        <!-- Carousel Indicators (Dots) -->
+        <div class="text-center mb-3">
+            <ol class="carousel-indicators">
+               
+            </ol>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 text-center">
+                            <img src="images/testimonialcoach.jpg" alt="John Smith" class="testimonial-img">
+                        </div>
+                        <div class="col-md-9">
+                            <p class="testimonial-text"><i class="fas fa-quote-left"></i> Amazing service and mascot! my team finally feels united again!  <i class="fas fa-quote-right"></i></p>
+                            <h5 class="testimonial-name">John Smith</h5>
+                            <p class="text-white-50">Teamcoach&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 text-center">
+                            <img src="images/testimonialgirl.jpg" alt="Lisa Johnson" class="testimonial-img">
+                        </div>
+                        <div class="col-md-9">
+                            <p class="testimonial-text"><i class="fas fa-quote-left"></i> Fast and friendly support. Highly recommended! <i class="fas fa-quote-right"></i></p>
+                            <h5 class="testimonial-name">Lisa Johnson</h5>
+                            <p class="text-white-50">Marketing Manager, Creative Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 text-center">
+                            <img src="images/testimonialboy.jpg" alt="James Brown" class="testimonial-img">
+                        </div>
+                        <div class="col-md-9">
+                            <p class="testimonial-text"><i class="fas fa-quote-left"></i> Thanks to this team, my project was a huge success! <i class="fas fa-quote-right"></i></p>
+                            <h5 class="testimonial-name">James Brown</h5>
+                            <p class="text-white-50">Lead Developer, Soft Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls (Previous & Next) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+	   <br><br>
+</section>
+
+	  
+	  
+	   <!-- end Testimonials  -->
+
+    <!-- A footer with socials -->
+    <footer class="shadow-lg mt-auto py-4 bg-body">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p>
+          © 2025 &mdash; TeamBeast Official
+        </p>
+        <ul class="list-unstyled d-flex align-items-center opacity-75">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61574191285460" target="_blank">
+              <img class="m-2" src="images/facebook.svg" alt="Follow us on" width="26">
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://www.instagram.com/teambeastofficial_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@teambeast81?_t=ZN-8uxUJ2ddyII&_r=1" target="_blank">
+              <img class="m-2" src="images/tiktok.svg" alt="Follow us on TikTok" width="26">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End of the footer -->
 
   </body>
 </html>
