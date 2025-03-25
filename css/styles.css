@@ -1,6 +1,12 @@
 /* Importing a Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
+/* Typography */
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #FEF6ED;
+    color: #080808;
+}
 
 h2 {
     font-family: "Racing Sans One", sans-serif;
@@ -18,22 +24,31 @@ h4 {
     text-align: center;
 }
 
-/* Value items - h5 and p inline */
-.value-item {
-    display: flex;
-    align-items: flex-start; /* Align text tops */
-    gap: 10px;
-    margin-bottom: 16px;
-}
-
-.value-item h5 {
+h5 {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #306A4A;
     margin: 0;
     font-size: 1.1em;
-    width: 180px; /* Fixed width for alignment */
+    white-space: nowrap;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Value item layout */
+.value-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.value-item h5 {
+    width: 180px;
     flex-shrink: 0;
 }
 
@@ -42,25 +57,17 @@ h4 {
     flex: 1;
 }
 
-
-/* Styling for h5 */
-h5 {
-    font-family: "Racing Sans One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #306A4A;
-    margin: 0;
-    font-size: 1.1em;
-    white-space: nowrap; /* Prevents h5 from wrapping */
+/* Navbar */
+.navbar {
+    background-color: #0F3894;
 }
 
-/* Styling for paragraphs */
-p {
-    margin: 0;
-    flex: 1; /* Allows text to fill remaining space */
+.navbar a {
+    color: #FEF6ED;
+    text-decoration: none;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
     text-align: center;
     background-color: #0F3894;
@@ -69,58 +76,17 @@ footer {
     margin-top: 20px;
 }
 
-p {
-  margin-top: 5px; /* Remove extra space above paragraphs */
-  margin-bottom: 5px; /* Adjust spacing as needed */
-}
-
-
-
-/* Changing the main font and background colour */
-body {
-    font-family: Raleway, sans-serif;
-    background-color: #FEF6ED;
-    color: #080808;
-}
-
-/* Changing the background colour for the header */
-header {
-    background-color: #000060;
-}
-
-.navbar {
-    background-color: #0F3894;
-}
-
-.navbar a {
-    color: #FEF6ED; /* Change text color */
-    text-decoration: none; /* Remove underline if needed */
-}
-    
-	
-
-
-/* Effect on social media buttons */
 footer a:hover {
     opacity: .5;
 }
 
-/* Corporate navbar */
+/* Corporate navbar highlight */
 #navbar-corporate a.active {
     color: #FEF6ED;
     font-weight: bold;
 }
 
-/* Hero Section shadow */
-.white-shadow {
-    text-shadow: -.01em -.01em .01em white,
-        .02em .02em .02em white,
-        0 0 .2em white,
-        0 0 .5em white;
-}
-
-<<<<<<< Updated upstream
-/* Hero Section */
+/* Hero Section with video */
 header {
     position: relative;
     background-color: black;
@@ -158,43 +124,34 @@ header .overlay {
     z-index: 1;
 }
 
+/* Fallback image for mobile devices that can't play video */
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background-size: cover;
+  }
 
-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translateX(-50%) translateY(-50%);
+  header video {
+    display: none;
+  }
 }
 
-header .container {
-    position: relative;
-    z-index: 2;
+/* Hero Section white text shadow */
+.white-shadow {
+    text-shadow: -.01em -.01em .01em white,
+        .02em .02em .02em white,
+        0 0 .2em white,
+        0 0 .5em white;
 }
 
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-}
-
-
+/* Custom font utility */
 .racing-sans-one-regular {
-  font-family: "Racing Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Three columns side by side */
+/* Column layout (manual grid) */
 .column {
     float: left;
     width: 33.3%;
@@ -202,7 +159,6 @@ header .overlay {
     padding: 0 8px;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
@@ -210,7 +166,7 @@ header .overlay {
     }
 }
 
-/* Add some shadows to create a card effect */
+/* Card styling */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f1f1f1;
@@ -219,27 +175,30 @@ header .overlay {
     border-radius: 10px;
 }
 
+/* Images */
 img {
     width: 100%;
     border-radius: 10px;
 }
 
-/* Some left and right padding inside the container */
+/* Container padding + float clear */
 .container {
     padding: 0 16px;
 }
 
-/* Clear floats */
-.container::after, .row::after {
+.container::after,
+.row::after {
     content: "";
     clear: both;
     display: table;
 }
 
+/* Text highlight */
 .title {
     color: grey;
 }
 
+/* Buttons */
 .button {
     border: none;
     outline: 0;
@@ -250,64 +209,9 @@ img {
     text-align: center;
     cursor: pointer;
     width: 100%;
+    border-radius: 4px;
 }
 
 .button:hover {
     background-color: #555;
-=======
-
-
-header {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-
-  header video {
-    display: none;
-  }
->>>>>>> Stashed changes
 }
