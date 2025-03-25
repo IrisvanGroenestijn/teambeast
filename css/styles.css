@@ -2,82 +2,100 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
-/* Changing the main font and background colour */
+h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #F1600D;
+    text-align: left;
+}
 
+h4 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0F3894;
+    text-align: center;
+}
+
+/* Value items - h5 and p inline */
+.value-item {
+    display: flex;
+    align-items: flex-start; /* Align text tops */
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.value-item h5 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #306A4A;
+    margin: 0;
+    font-size: 1.1em;
+    width: 180px; /* Fixed width for alignment */
+    flex-shrink: 0;
+}
+
+.value-item p {
+    margin: 0;
+    flex: 1;
+}
+
+
+/* Styling for h5 */
+h5 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #306A4A;
+    margin: 0;
+    font-size: 1.1em;
+    white-space: nowrap; /* Prevents h5 from wrapping */
+}
+
+/* Styling for paragraphs */
+p {
+    margin: 0;
+    flex: 1; /* Allows text to fill remaining space */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #0F3894;
+    color: #FEF6ED;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+p {
+  margin-top: 5px; /* Remove extra space above paragraphs */
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+
+
+/* Changing the main font and background colour */
 body {
-	font-family: "Racing Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-	background-color: #FEF6ED;
+    font-family: Raleway, sans-serif;
+    background-color: #FEF6ED;
+    color: #080808;
 }
 
 /* Changing the background colour for the header */
-
 header {
-	background-color: #000060;
+    background-color: #000060;
 }
-.who-we-are {
-  text-align: center;
-}
-
- .racing-sans-one-regular {
-  font-family: "Racing Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.row.bg-success.bg-opacity-25 {
-  background-color: #F1600D !important; /* Vervang de kleur door wat je wilt */
-}
-.who-we-are h2 {
-  font-size: 2rem;
-  color: #FEF6ED;
-  margin-bottom: 15px;
-}
-
-.who-we-are p {
-  font-size: 1.1rem;
-  color: #FEF6ED;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-/* Changing the background color for the navigation bar */
 
 .navbar {
-	background-color: #0F3894;
+    background-color: #0F3894;
 }
 
 .navbar a {
-  color: #FEF6ED; /* Stel de tekstkleur in die je wilt, bijvoorbeeld lichtbeige */
-}
-
-.navbar a:hover {
-  color: #F1600D; /* Kleuren wanneer je met de muis over de link zweeft, bijvoorbeeld wit */
-}
-
-/* Effect on social media buttons */
-
-footer a:hover {
-	opacity: .5;
-}
-
-/* Corporate navbar */
-
-#navbar-corporate a.active {
-	color: #800000;
-	font-weight: bold;
-}
-
-/* Hero Section shadow */
-
-.white-shadow {
-	text-shadow: -.01em -.01em .01em white,
-		.02em .02em .02em white,
-		0 0 .2em white,
-		0 0 .5em white;
-}
-
-/* meet the team */
+    color: #FEF6ED; /* Change text color */
+    text-decoration: none; /* Remove underline if needed */
+}/* meet the team */
 
 .team-img {
     width: 150px;
@@ -135,6 +153,12 @@ footer a:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Fade-in active testimonial */
