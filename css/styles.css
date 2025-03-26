@@ -2,6 +2,91 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
+<<<<<<< HEAD
+=======
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #F1600D;
+    text-align: left;
+}
+
+h4 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0F3894;
+    text-align: center;
+}
+
+/* Value items - h5 and p inline */
+.value-item {
+    display: flex;
+    align-items: flex-start; /* Align text tops */
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.value-item h5 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #306A4A;
+    margin: 0;
+    font-size: 1.1em;
+    width: 180px; /* Fixed width for alignment */
+    flex-shrink: 0;
+}
+
+.value-item p {
+    margin: 0;
+    flex: 1;
+}
+
+
+/* Styling for h5 */
+h5 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #306A4A;
+    margin: 0;
+    font-size: 1.1em;
+    white-space: nowrap; /* Prevents h5 from wrapping */
+}
+
+/* Styling for paragraphs */
+p {
+    margin: 0;
+    flex: 1; /* Allows text to fill remaining space */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #0F3894;
+    color: #FEF6ED;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+p {
+  margin-top: 5px; /* Remove extra space above paragraphs */
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+
+
+>>>>>>> 9c8a488c71082b4864950dbd958b90d6f80ef4a1
 /* Changing the main font and background colour */
 
 body {
