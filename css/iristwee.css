@@ -41,7 +41,26 @@ header {
 /* Styling for navigation bar */
 .navbar {
     background-color: #0F3894;
+    color: #FEF6ED; /* Ensuring text color is applied */
 }
+
+.navbar a {
+    color: #FEF6ED; /* Setting text color for navigation links */
+}
+
+.navbar a:hover {
+    color: #F1600D; /* Hover effect on navbar links */
+
+}
+
+/* Styling for stepst image */
+.stepst-img {
+    max-width: 80%; /* Adjust size relative to the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures proper alignment */
+    margin: 20px auto; /* Centers the image */
+}
+
 
 /* Hover effect on social media links */
 footer a:hover {
@@ -81,6 +100,7 @@ footer a:hover {
 /* Contact button styling */
 .contact-btn {
     background-color: #0F3894; /* Button color */
+	text-decoration: none;  /* Removes underline */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -172,4 +192,45 @@ footer a:hover {
 
 .carousel-indicators .active {
     background-color: #ffffff;
+}
+
+.special-heading {
+    color: #306A4A; /* Pas de kleur aan */
+	text-align: center;
+}
+
+/* Instagram Contact Section */
+.contact-instagram {
+    background-color: #F1600D; /* Huisstijl kleur */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact-instagram .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px; /* EXTREEM GROTE AFSTAND TUSSEN LOGO EN TEKST */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 100px; /* Extra padding zodat ze nog verder uit elkaar staan */
+}
+
+.instagram-icon img {
+    width: 120px; /* Extra groot logo */
+    height: 120px;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(0) invert(1); /* Kleur naar #FEF6ED */
+}
+
+.instagram-icon img:hover {
+    transform: scale(1.1);
+}
+
+.contact-text {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #FEF6ED;
+    font-weight: bold;
+    line-height: 1.0; 
 }
