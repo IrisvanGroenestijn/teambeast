@@ -1,8 +1,10 @@
-/* Importing a Google Font */
+ /* Importing a Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 @import url("merel.css");
 
+<<<<<<< HEAD
+=======
 
 .racing-sans-one-regular {
   font-family: "Racing Sans One", sans-serif;
@@ -85,26 +87,76 @@ p {
 
 
 
+>>>>>>> 9c8a488c71082b4864950dbd958b90d6f80ef4a1
 /* Changing the main font and background colour */
+
 body {
-    font-family: Raleway, sans-serif;
-    background-color: #FEF6ED;
-    color: #080808;
+	font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	background-color: #FEF6ED;
 }
 
 /* Changing the background colour for the header */
+
 header {
-    background-color: #000060;
+	background-color: #000060;
 }
+.who-we-are {
+  text-align: center;
+
+
+}
+ .racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.row.bg-success.bg-opacity-25 {
+  background-color: #F1600D !important; /* Vervang de kleur door wat je wilt */
+}
+.who-we-are h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.who-we-are p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+/* Changing the background color for the navigation bar */
 
 .navbar {
-    background-color: #0F3894;
+	background-color: #0F3894;
 }
 
-.navbar a {
-    color: #FEF6ED; /* Change text color */
-    text-decoration: none; /* Remove underline if needed */
-}/* meet the team */
+/* Effect on social media buttons */
+
+footer a:hover {
+	opacity: .5;
+}
+
+/* Corporate navbar */
+
+#navbar-corporate a.active {
+	color: #800000;
+	font-weight: bold;
+}
+
+/* Hero Section shadow */
+
+.white-shadow {
+	text-shadow: -.01em -.01em .01em white,
+		.02em .02em .02em white,
+		0 0 .2em white,
+		0 0 .5em white;
+}
+
+/* meet the team */
 
 .team-img {
     width: 150px;
@@ -156,18 +208,12 @@ header {
 .testimonial-text {
     font-size: 1.2rem;
     font-style: italic;
-    color: #FEF6ED;
+    color: #fff;
     padding: 15px;
     position: relative;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.racing-sans-one-regular {
-  font-family: "Racing Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* Fade-in active testimonial */
@@ -178,7 +224,7 @@ header {
 
 /* Quote icons */
 .testimonial-text i {
-    color: #FEF6ED;
+    color: #0F3894;
     font-size: 1.5rem;
     margin: 0 5px;
 }
