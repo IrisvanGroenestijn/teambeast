@@ -1,13 +1,14 @@
 /* Importing a Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
-/* Typography */
+/* Base Styles */
 body {
     font-family: Raleway, sans-serif;
     background-color: #FEF6ED;
     color: #080808;
 }
 
+/* Headings */
 h2 {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
@@ -34,12 +35,14 @@ h5 {
     white-space: nowrap;
 }
 
+/* Paragraphs */
 p {
     margin-top: 5px;
     margin-bottom: 5px;
+    flex: 1;
 }
 
-/* Value item layout */
+/* Value Items Layout */
 .value-item {
     display: flex;
     align-items: flex-start;
@@ -67,6 +70,13 @@ p {
     text-decoration: none;
 }
 
+/* Corporate navbar highlight */
+#navbar-corporate a.active {
+    color: #FEF6ED;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -80,20 +90,115 @@ footer a:hover {
     opacity: .5;
 }
 
-/* Corporate navbar highlight */
-#navbar-corporate a.active {
-    color: #FEF6ED;
+/* Team Images */
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0F3894;
+    padding: 5px;
+}
+
+.team-member h5 {
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: #0F3894;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #0c2c6e;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #306A4A;
+    padding: 50px 0;
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0F3894;
+    padding: 5px;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #FEF6ED;
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.carousel-item.active .testimonial-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-text i {
+    color: #FEF6ED;
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    color: #0F3894;
+}
+
+/* Carousel Fade Effect */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: #0F3894;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
 }
 
 /* Hero Section with video */
 header {
     position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 header video {
@@ -124,34 +229,34 @@ header .overlay {
     z-index: 1;
 }
 
-/* Fallback image for mobile devices that can't play video */
+/* Fallback for mobile devices */
 @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    background-size: cover;
-  }
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        background-size: cover;
+    }
 
-  header video {
-    display: none;
-  }
+    header video {
+        display: none;
+    }
 }
 
-/* Hero Section white text shadow */
+/* Text with white shadow */
 .white-shadow {
     text-shadow: -.01em -.01em .01em white,
-        .02em .02em .02em white,
-        0 0 .2em white,
-        0 0 .5em white;
+                 .02em .02em .02em white,
+                 0 0 .2em white,
+                 0 0 .5em white;
 }
 
-/* Custom font utility */
+/* Custom Font Utility */
 .racing-sans-one-regular {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-/* Column layout (manual grid) */
+/* Column Layout */
 .column {
     float: left;
     width: 33.3%;
@@ -166,7 +271,7 @@ header .overlay {
     }
 }
 
-/* Card styling */
+/* Card Styling */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f1f1f1;
@@ -181,7 +286,7 @@ img {
     border-radius: 10px;
 }
 
-/* Container padding + float clear */
+/* Container Padding and Clearfix */
 .container {
     padding: 0 16px;
 }
@@ -193,12 +298,12 @@ img {
     display: table;
 }
 
-/* Text highlight */
+/* Highlight Title */
 .title {
     color: grey;
 }
 
-/* Buttons */
+/* Generic Button */
 .button {
     border: none;
     outline: 0;
@@ -214,60 +319,4 @@ img {
 
 .button:hover {
     background-color: #555;
-}
-
-
-
-header {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-
-  header video {
-    display: none;
-  }
 }
