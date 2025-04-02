@@ -18,6 +18,12 @@ header {
 /* "Who We Are" section styles */
 .who-we-are {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Zorgt voor verticale centrering */
+    align-items: center; /* Zorgt voor horizontale centrering */
+    height: 100%; /* Zorgt ervoor dat de sectie de volledige hoogte van de container benut */
+    padding: 20px; /* Voegt wat ruimte toe aan de randen */
 }
 
 .who-we-are h2 {
@@ -91,6 +97,15 @@ footer a:hover {
     padding: 5px;
 }
 
+/* Team member container */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px; /* Adds space between rows */
+}
+
 /* Team member name styling */
 .team-member h5 {
     font-weight: bold;
@@ -100,7 +115,7 @@ footer a:hover {
 /* Contact button styling */
 .contact-btn {
     background-color: #0F3894; /* Button color */
-	text-decoration: none;  /* Removes underline */
+    text-decoration: none; /* Removes underline */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -108,11 +123,20 @@ footer a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    margin-top: 10px; /* Ensures spacing between text and button */
+    display: inline-block; /* Prevents button from shrinking */
 }
 
 /* Hover effect on contact button */
 .contact-btn:hover {
     background-color: #0c2c6e; /* Darker shade for hover effect */
+}
+
+/* Ensure proper spacing between team members on smaller screens */
+@media (max-width: 768px) {
+    .team-member {
+        margin-bottom: 40px; /* Adds more space on small screens */
+    }
 }
 
 /* Testimonial section styling */
