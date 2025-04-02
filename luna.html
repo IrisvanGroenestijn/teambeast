@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="en" class="h-100">
-<link href="css/luna.css" rel="stylesheet" type="text/css">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>TeamBeast — About Us</title>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
@@ -15,14 +14,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/luna.css" type="text/css">
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <title>TeamBeast — About Us</title>
   </head>
-  <body class="h-100 d-flex flex-column">
 
+  <body class="h-100 d-flex flex-column">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -53,11 +51,31 @@
         </div>
       </div>
     </nav>
+	  
+	  
+    <section class="d-flex flex-column flex-lg-row align-items-stretch text-white" style="background-color: #FEF6ED;">
+      <div class="p-5 d-flex flex-column justify-content-center col-lg-6">
+    <h1>About us</h1>
+ 	<h2 style="color: #0F3894;">Are you tired of seeing your team lack unity, hype, or <span style="color: #306A4A;">spirit </span>—just because you don’t have the budget of the pros?</h2>
 
-  <!-- Main container with values -->
-    <main class="container py-4">
-      <h2>About us</h2>
-      <h4>Values</h4>
+		  
+        <p style="color: #F1600D;"> Welcome to <strong style="color: #306A4A;">Teambeast</strong>, where we bring the power of team spirit to life. We're here for every squad that wants to stand out, connect, and play with pride.</p> 
+		<p style="color: #F1600D;"> So… ready to roar with confidence? We’ve got your back. Now let’s bring your team to life.</p>
+      </div>
+		
+<div class="w-100 overflow-hidden">
+  <video autoplay muted loop playsinline style="width: 100%; height: auto; object-fit: cover;">
+    <source src="video/mascotsaboutus.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+    </section>
+    <!-- Main content -->
+<main class="container py-4 mt-5">
+	<h1 class="text-center">Values</h1>
 
       <div class="value-item">
         <h5>Roar with Confidence:</h5>
@@ -80,40 +98,103 @@
       </div>
     </main>
 
-    <!-- ✅ Full-width Vision Image -->
+    <!-- Carousel -->
     <div class="w-100">
-   <!-- Start of carrousel, adapted from https://getbootstrap.com/docs/5.1/components/carousel/ -->
-<section class="container-fluid p-0">
-  <h2 class="visually-hidden">Image Carousel</h2>
-	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/vision.svg" class="d-block mx-auto w-100" alt="...">
-            <div class="carousel-caption">
+      <section class="container-fluid p-0">
+        <h2 class="visually-hidden">Image Carousel</h2>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/vision.svg" class="d-block mx-auto w-100" alt="Vision slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/mission.svg" class="d-block mx-auto w-100" alt="Mission slide">
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="images/mission.svg" class="d-block mx-auto w-100" alt="...">
-            <div class="carousel-caption">
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
+      </section>
     </div>
+	
+<section class="testimonial-section py-5 mt-5">
 
-  </body>
+  <div class="container">
+    <h2 class="text-center mb-4 text-white">What Our Clients Say</h2>
+
+    <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+              <img src="images/testimonialcoach.jpg" alt="John Smith" class="testimonial-img">
+            </div>
+            <div class="col-md-9">
+              <p class="testimonial-text"><i class="fas fa-quote-left"></i> "Team spirit is everything, and TeamBeast helped us take it to the next level! The custom mascot they designed is not only fun but also represents our team’s values perfectly!"
+                <i class="fas fa-quote-right"></i></p>
+              <h5 class="testimonial-name">John Smith</h5>
+              <p class="text-white-50">Hockey Coach</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+              <img src="images/testimonialgirl.jpg" alt="Lisa Johnson" class="testimonial-img">
+            </div>
+            <div class="col-md-9">
+              <p class="testimonial-text"><i class="fas fa-quote-left"></i>"I wanted something to bring our team together and make our games more exciting. TeamBeast created the perfect mascot that fits our team's personality."
+                <i class="fas fa-quote-right"></i></p>
+              <h5 class="testimonial-name">Lisa Johnson</h5>
+              <p class="text-white-50">Student Coach</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+              <img src="images/testimonialboy.jpg" alt="James Brown" class="testimonial-img">
+            </div>
+            <div class="col-md-9">
+              <p class="testimonial-text"><i class="fas fa-quote-left"></i> "Our new mascot is amazing! It brings so much energy to every game, and the crowd loves it. Having our own unique mascot makes us feel like a real team—it’s like our secret weapon for team spirit!" <i class="fas fa-quote-right"></i></p>
+              <h5 class="testimonial-name">James Brown</h5>
+              <p class="text-white-50">Student</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+	  
+
+</body>
+	
 </html>
+
 
