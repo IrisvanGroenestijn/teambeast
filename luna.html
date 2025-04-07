@@ -21,38 +21,36 @@
   </head>
 
   <body class="h-100 d-flex flex-column">
-    <!-- Navbar -->
+<!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" style="width: 100px;" alt="TeamBeast logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <img src="images/logo.png" class="logo-small" alt="Breda University of Applied Sciences">
+		  </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="example.html">Example</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About Us</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">UX Patterns</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="hero.html">Hero Section</a></li>
-                <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="two-columns.html">Two-column Layout</a></li>
-                <li><a class="dropdown-item" href="cards.html">Cards</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="https://buas-media-interactive.github.io/prj4-guide/" target="_blank">PRJ4 Guide</a></li>
-            <li class="nav-item"><a class="nav-link" href="corporate.html">Corporate</a></li>
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="luna.html" target="_blank">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Max.html">Get inspired</a>
+            </li>
+		    <li class="nav-item">
+              <a class="nav-link" href="corporate.html">Corporate</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-	  
-	  
+    <!-- End of navigation bar -->
     <section class="d-flex flex-column flex-lg-row align-items-stretch text-white" style="background-color: #FEF6ED;">
       <div class="p-5 d-flex flex-column justify-content-center col-lg-6">
     <h1>About us</h1>
@@ -127,70 +125,20 @@
       </section>
     </div>
 	
-<section class="testimonial-section py-5 mt-5">
 
-  <div class="container">
-    <h2 class="text-center mb-4 text-white">What Our Clients Say</h2>
-
-    <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-inner">
-
-        <!-- Testimonial 1 -->
-        <div class="carousel-item active">
-          <div class="row align-items-center">
-            <div class="col-md-3 text-center">
-              <img src="images/testimonialcoach.jpg" alt="John Smith" class="testimonial-img">
-            </div>
-            <div class="col-md-9">
-              <p class="testimonial-text"><i class="fas fa-quote-left"></i> "Team spirit is everything, and TeamBeast helped us take it to the next level! The custom mascot they designed is not only fun but also represents our team’s values perfectly!"
-                <i class="fas fa-quote-right"></i></p>
-              <h5 class="testimonial-name">John Smith</h5>
-              <p class="text-white-50">Hockey Coach</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-3 text-center">
-              <img src="images/testimonialgirl.jpg" alt="Lisa Johnson" class="testimonial-img">
-            </div>
-            <div class="col-md-9">
-              <p class="testimonial-text"><i class="fas fa-quote-left"></i>"I wanted something to bring our team together and make our games more exciting. TeamBeast created the perfect mascot that fits our team's personality."
-                <i class="fas fa-quote-right"></i></p>
-              <h5 class="testimonial-name">Lisa Johnson</h5>
-              <p class="text-white-50">Student Coach</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-3 text-center">
-              <img src="images/testimonialboy.jpg" alt="James Brown" class="testimonial-img">
-            </div>
-            <div class="col-md-9">
-              <p class="testimonial-text"><i class="fas fa-quote-left"></i> "Our new mascot is amazing! It brings so much energy to every game, and the crowd loves it. Having our own unique mascot makes us feel like a real team—it’s like our secret weapon for team spirit!" <i class="fas fa-quote-right"></i></p>
-              <h5 class="testimonial-name">James Brown</h5>
-              <p class="text-white-50">Student</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+	  
+	 <!-- Footer -->
+<footer class="footer shadow-lg mt-auto py-4 bg-body">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="footer-text">© 2025 &mdash; TeamBeast Official</p>
+        <ul class="social-icons list-unstyled d-flex align-items-center opacity-75">
+            <li><a href="https://www.facebook.com/profile.php?id=61574191285460" target="_blank"><img class="m-2" src="images/facebook.svg" alt="Follow us on Facebook" width="26"></a></li>
+            <li><a href="https://www.instagram.com/teambeastofficial_" target="_blank"><img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26"></a></li>
+            <li><a href="https://www.tiktok.com/@teambeast81" target="_blank"><img class="m-2" src="images/tiktok.svg" alt="Follow us on TikTok" width="26"></a></li>
+        </ul>
     </div>
-  </div>
-</section>
+</footer>
+<!-- End of Footer -->
 	  
 
 </body>

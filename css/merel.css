@@ -220,3 +220,84 @@ header {
 .carousel-indicators .active {
     background-color: #ffffff;
 }
+
+/* Styling for navigation bar */
+.navbar {
+    background-color: #0F3894;
+    color: #FEF6ED; /* Ensuring text color is applied */
+	
+}
+
+.navbar a {
+    color: #FEF6ED; /* Setting text color for navigation links */
+}
+
+.navbar a:hover {
+    color: #F1600D; /* Hover effect on navbar links */
+
+}
+
+/* Applying Racing Sans One font to the entire page */
+body {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FEF6ED;
+	
+	/* Footer styling */
+footer {
+    background-color: #FEF6ED; /* Light background color for the footer */
+    padding: 20px 0; /* Padding above and below the footer */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth effect */
+}
+
+/* Container within the footer for text and social media icons */
+footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribute text and social icons */
+    align-items: center; /* Vertically center the items */
+    max-width: 1200px; /* Maximum width of the footer */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+/* Left text in the footer (Copyright text) */
+footer p {
+    color: #000; /* Black text color */
+    font-size: 1rem; /* Text size */
+    margin: 0; /* Remove margin for consistency */
+    flex: 1 1 auto; /* Ensure this takes up available space */
+    text-align: left; /* Align the text to the left */
+}
+
+/* Social media icons container */
+footer .social-icons {
+    display: flex;
+    gap: 5px; /* Reduce the space between the icons */
+    list-style: none; /* Remove default list style */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+/* Icon styling */
+footer .social-icons img {
+    width: 26px; /* Icon size */
+    height: 26px; /* Ensure consistent height */
+    transition: transform 0.3s ease; /* Optional transition effect for hover */
+}
+
+/* Hover effect for social media icons */
+footer .social-icons a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the icons on hover */
+}
+
+/* Styling for links inside the footer */
+footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Hover effect for links (when hovered over) */
+footer a:hover {
+    opacity: 0.8; /* Slight transparency when hovering over the link */
+}
