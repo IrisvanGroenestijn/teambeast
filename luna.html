@@ -21,12 +21,12 @@
   </head>
 
   <body class="h-100 d-flex flex-column">
-<!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" class="logo-small" alt="Breda University of Applied Sciences">
-		  </a>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,14 +36,12 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="luna.html" >About us</a>
+              <a class="nav-link" href="luna.html">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Max.html">Get inspired</a>
             </li>
-		    <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
           </ul>
@@ -51,52 +49,58 @@
       </div>
     </nav>
     <!-- End of navigation bar -->
-    <section class="d-flex flex-column flex-lg-row align-items-stretch text-white" style="background-color: #FEF6ED;">
-      <div class="p-5 d-flex flex-column justify-content-center col-lg-6 bgabout"> 
+
+    <!-- Hero Section with background video (verbeterd) -->
+<section class="about-section d-flex flex-column flex-lg-row">
+  <div class="about-text d-flex flex-column justify-content-center p-5">
     <h1>About us</h1>
- 	<h2 style="color: #0F3894;">Are you tired of seeing your team lack unity, hype, or <span style="color: #FEF6ED;">spirit </span>—just because you don’t have the budget of the pros?</h2>
+    <h2 style="color: #0F3894;">
+      Are you tired of seeing your team lack unity, hype, or 
+      <span style="color: #FEF6ED;">spirit</span> — just because you don’t have the budget of the pros?
+    </h2>
+    <p style="color: #F1600D;">
+      Welcome to <strong style="color: #FEF6ED;">Teambeast</strong>, where we bring the power of team spirit to life. 
+      We're here for every squad that wants to stand out, connect, and play with pride.
+    </p>
+    <p style="color: #F1600D;">
+      So… ready to roar with confidence? We’ve got your back. Now let’s bring your team to life.
+    </p>
+  </div>
 
-		  
-        <p style="color: #F1600D;"> Welcome to <strong style="color: #FEF6ED;">Teambeast</strong>, where we bring the power of team spirit to life. We're here for every squad that wants to stand out, connect, and play with pride.</p> 
-		<p style="color: #F1600D;"> So… ready to roar with confidence? We’ve got your back. Now let’s bring your team to life.</p>
-      </div>
-		
-<div class="w-100 overflow-hidden">
-  <video autoplay muted loop playsinline style="width: 100%; height: auto; object-fit: cover;">
-    <source src="video/mascotsaboutus.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+  <div class="about-video">
+    <video autoplay muted loop playsinline>
+      <source src="video/mascotsaboutus.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
-
-
-    </section>
-    <!-- Main content -->
-<main class="container py-4 mt-5">
-	<h1 class="text-center">Values</h1>
+    <!-- Main content with values -->
+    <main class="container py-4 mt-5">
+      <h1 class="text-center">Values</h1>
 
       <div class="value-item">
         <h5>Roar with Confidence:</h5>
-        <p>A powerful presentation is the backbone of a strong image. With memorable mascots, we empower teams and clubs in confidently and strongly representing who they are.</p>
+        <p class= "textblack">A powerful presentation is the backbone of a strong image. With memorable mascots, we empower teams and clubs in confidently and strongly representing who they are.</p>
       </div>
 
       <div class="value-item">
         <h5>Smells like TEAM spirit:</h5>
-        <p>We believe in the power of strong teams. A mascot is more than just a symbol; it brings players and supporters together, reinforcing a shared identity.</p>
+        <p class= "textblack">We believe in the power of strong teams. A mascot is more than just a symbol; it brings players and supporters together, reinforcing a shared identity.</p>
       </div>
 
       <div class="value-item">
         <h5>Fuel the Fire:</h5>
-        <p>Every successful team is made out of unity, enthusiasm, and energy. By creating mascots that enhance team spirit and make every game an exciting experience, we are contributing to fueling the flame.</p>
+        <p class= "textblack">Every successful team is made out of unity, enthusiasm, and energy. By creating mascots that enhance team spirit and make every game an exciting experience, we are contributing to fueling the flame.</p>
       </div>
 
       <div class="value-item">
         <h5>Game Changer:</h5>
-        <p>We at TeamBeast are THE gamechanger! Aiming to provide a sustainable and budget-friendly way for young amateur sports teams to enhance the collective and empower the team-spirit by providing them with mascots completely tailored to their taste profiles.</p>
+        <p class= "textblack">We at TeamBeast are THE gamechanger! Aiming to provide a sustainable and budget-friendly way for young amateur sports teams to enhance the collective and empower the team-spirit by providing them with mascots completely tailored to their taste profiles.</p>
       </div>
     </main>
 
-    <!-- Carousel -->
+    <!-- Carousel Section -->
     <div class="w-100">
       <section class="container-fluid p-0">
         <h2 class="visually-hidden">Image Carousel</h2>
@@ -124,25 +128,18 @@
         </div>
       </section>
     </div>
-	
 
-	  
-	 <!-- Footer -->
-<footer class="footer shadow-lg mt-auto py-4 bg-body">
-    <div class="container d-flex justify-content-between align-items-center">
+    <!-- Footer -->
+    <footer class="footer shadow-lg mt-auto py-4 bg-body">
+      <div class="container d-flex justify-content-between align-items-center">
         <p class="footer-text">© 2025 &mdash; TeamBeast Official</p>
         <ul class="social-icons list-unstyled d-flex align-items-center opacity-75">
-            <li><a href="https://www.facebook.com/profile.php?id=61574191285460" target="_blank"><img class="m-2" src="images/facebook.svg" alt="Follow us on Facebook" width="26"></a></li>
-            <li><a href="https://www.instagram.com/teambeastofficial_" target="_blank"><img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26"></a></li>
-            <li><a href="https://www.tiktok.com/@teambeast81" target="_blank"><img class="m-2" src="images/tiktok.svg" alt="Follow us on TikTok" width="26"></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61574191285460" target="_blank"><img class="m-2" src="images/facebook.svg" alt="Follow us on Facebook" width="26"></a></li>
+          <li><a href="https://www.instagram.com/teambeastofficial_" target="_blank"><img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26"></a></li>
+          <li><a href="https://www.tiktok.com/@teambeast81" target="_blank"><img class="m-2" src="images/tiktok.svg" alt="Follow us on TikTok" width="26"></a></li>
         </ul>
-    </div>
-</footer>
-<!-- End of Footer -->
-	  
-
-</body>
-	
+      </div>
+    </footer>
+  </body>
 </html>
-
 
