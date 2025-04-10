@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 @import url("merel.css");
 
-<<<<<<< HEAD
+HEAD
 /* Base Styles */
 body {
     font-family: Raleway, sans-serif;
@@ -253,63 +253,48 @@ header .overlay {
 }
 
 /* Custom Font Utility */
-=======
-<<<<<<< HEAD
-=======
+ HEAD
 
->>>>>>> 85bef22a60839337c04108c38929a549f3486c9f
+
 .racing-sans-one-regular {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-<<<<<<< HEAD
+HEAD
 /* Column Layout */
 .column {
     float: left;
     width: 33.3%;
-=======
 
-h2 {
-    font-family: "Racing Sans One", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color: #F1600D;
-    text-align: left;
+
+
 }
 
-h4 {
-    font-family: "Racing Sans One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #0F3894;
-    text-align: center;
-}
 
 /* Value items - h5 and p inline */
-.value-item {
+	value-item {
     display: flex;
     align-items: flex-start; /* Align text tops */
     gap: 10px;
->>>>>>> 85bef22a60839337c04108c38929a549f3486c9f
     margin-bottom: 16px;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 650px) {
-    .column {
+HEAD
+	.column {
         width: 100%;
         display: block;
     }
-}
+
 
 /* Card Styling */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f1f1f1;
     padding: 20px;
-=======
+	
+}
 .value-item h5 {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
@@ -346,7 +331,6 @@ p {
 
 /* Footer styling */
 footer {
->>>>>>> 85bef22a60839337c04108c38929a549f3486c9f
     text-align: center;
     background-color: #0F3894;
     color: #FEF6ED;
@@ -354,7 +338,7 @@ footer {
     margin-top: 20px;
 }
 
-<<<<<<< HEAD
+ HEAD
 /* Images */
 img {
     width: 100%;
@@ -384,15 +368,13 @@ img {
     outline: 0;
     display: inline-block;
     padding: 8px;
-=======
+}
 p {
   margin-top: 5px; /* Remove extra space above paragraphs */
   margin-bottom: 5px; /* Adjust spacing as needed */
 }
 
 
-
->>>>>>> 9c8a488c71082b4864950dbd958b90d6f80ef4a1
 /* Changing the main font and background colour */
 
 body {
@@ -479,21 +461,21 @@ footer a:hover {
 
 .contact-btn {
     background-color: #0F3894; /* Button color */
->>>>>>> 85bef22a60839337c04108c38929a549f3486c9f
+
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-<<<<<<< HEAD
-    width: 100%;
+}
+.HEAD {
+  width: 100%;
     border-radius: 4px;
 }
 
 .button:hover {
     background-color: #555;
-=======
     transition: background 0.3s ease-in-out;
 }
 
@@ -579,7 +561,6 @@ footer a:hover {
 
 .carousel-indicators .active {
     background-color: #ffffff;
->>>>>>> 85bef22a60839337c04108c38929a549f3486c9f
 }
 
 	/* Footer styling */
@@ -638,4 +619,16 @@ footer a {
 /* Hover effect for links (when hovered over) */
 footer a:hover {
     opacity: 0.8; /* Slight transparency when hovering over the link */
+}
+
+/* Maak de navbar sticky aan de bovenkant */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999; /* Zorg ervoor dat de navbar boven andere elementen komt */
+    width: 100%;
+}
+
+body {
+    padding-top: 56px; /* Pas dit aan op basis van de hoogte van je navbar */
 }

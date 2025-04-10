@@ -244,6 +244,7 @@ body {
     font-style: normal;
     background-color: #FEF6ED;
 	
+}
 	/* Footer styling */
 footer {
     background-color: #FEF6ED; /* Light background color for the footer */
@@ -300,4 +301,16 @@ footer a {
 /* Hover effect for links (when hovered over) */
 footer a:hover {
     opacity: 0.8; /* Slight transparency when hovering over the link */
+}
+
+/* Maak de navbar sticky aan de bovenkant */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999; /* Zorg ervoor dat de navbar boven andere elementen komt */
+    width: 100%;
+}
+
+body {
+    padding-top: 56px; /* Pas dit aan op basis van de hoogte van je navbar */
 }

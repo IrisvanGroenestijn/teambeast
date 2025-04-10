@@ -8,6 +8,9 @@ body {
     background-color: #FEF6ED;
     color: #080808;
 }
+body {
+    padding-top: 58px; /* Pas dit aan op basis van de hoogte van je navbar */
+}
 
 /* Headings */
 h1, .who-we-are h1 {
@@ -427,3 +430,33 @@ footer .social-icons a:hover img {
 }
 
 .bgabout{background-color: #306A4A;}
+
+/* Maak de navbar sticky aan de bovenkant */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999; /* Zorg ervoor dat de navbar boven andere elementen komt */
+    width: 100%;
+}
+
+/* Zorg ervoor dat de tekstkleur van de paragrafen en kopjes behouden blijft */
+h1, h2, h3, h4, h5, p {
+    color: #F1600D; /* Of een andere gewenste kleur */
+}
+
+/* Verzeker je ervan dat de achtergrond van secties niet verandert */
+.bgabout {
+    background-color: #306A4A !important; /* Gebruik !important om ervoor te zorgen dat het niet wordt overschreven */
+}
+
+/* Als er een transparante achtergrond is in een andere sectie, kan deze worden aangepast */
+section {
+    background-color: #FEF6ED !important; /* Zorg ervoor dat de achtergrondkleur niet verandert */
+}
+
+/* Video Styling (Zorg ervoor dat de video de layout niet beïnvloedt) */
+video {
+    position: relative; /* Zet de video in relatieve positie zodat het niet de layout breekt */
+    z-index: 1;  /* Zorg ervoor dat de video onder de navbar blijft */
+}
+
