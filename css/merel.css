@@ -26,6 +26,14 @@ h4 {
     color: #0F3894;
     text-align: center;
 }
+.instagram-small {
+  width: 250px;
+  height: auto;
+}
+.facebook-small {
+  width: 250px;
+  height: auto;
+}
 
 /* Value items - h5 and p inline */
 .value-item {
